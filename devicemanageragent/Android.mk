@@ -1,0 +1,22 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := devicemanageragent
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES    :=devicemanageragent_1.0.150812_33_release_internal.apk
+LOCAL_MODULE_PATH  := $(TARGET_OUT_APPS_PRIVILEGED)
+LOCAL_CERTIFICATE  := PRESIGNED
+LOCAL_MODULE_OWNER := tencent
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libsecure_proc
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_SRC_FILES := ../lib/libsecure_proc.so
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_MODULE_OWNER := tencent
+include $(BUILD_PREBUILT)

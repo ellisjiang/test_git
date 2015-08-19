@@ -1,0 +1,150 @@
+com.tencent.tws.batterycharge.BaseView -> com.tencent.tws.batterycharge.BaseView:
+    android.graphics.PaintFlagsDrawFilter mDrawFilter -> a
+    android.graphics.PorterDuffXfermode mXfermode -> b
+    android.graphics.Bitmap mMaskBitmap -> c
+    android.graphics.Bitmap shaderBitmap -> d
+    java.util.HashMap mMaskBitmapCache -> e
+    android.graphics.Paint mMaskPaint -> f
+    boolean mMaskFlag -> g
+    android.graphics.Rect dstRect -> h
+    void dispatchDraw(android.graphics.Canvas) -> dispatchDraw
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+com.tencent.tws.batterycharge.BaseView$BitmapHolder -> com.tencent.tws.batterycharge.a:
+    android.graphics.Bitmap mBitmap -> a
+    int mRefCount -> b
+    android.graphics.Bitmap access$002(com.tencent.tws.batterycharge.BaseView$BitmapHolder,android.graphics.Bitmap) -> a
+    int access$108(com.tencent.tws.batterycharge.BaseView$BitmapHolder) -> a
+    android.graphics.Bitmap access$000(com.tencent.tws.batterycharge.BaseView$BitmapHolder) -> b
+    int access$110(com.tencent.tws.batterycharge.BaseView$BitmapHolder) -> c
+    int access$100(com.tencent.tws.batterycharge.BaseView$BitmapHolder) -> d
+com.tencent.tws.batterycharge.BatteryReceiver -> com.tencent.tws.batterycharge.b:
+    java.lang.String TAG -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.tencent.tws.batterycharge.BatteryService -> com.tencent.tws.batterycharge.BatteryService:
+    java.lang.String TAG -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void onDestroy() -> onDestroy
+com.tencent.tws.batterycharge.BatteryStateBase -> com.tencent.tws.batterycharge.BatteryStateBase:
+    android.graphics.PaintFlagsDrawFilter mPDrawFilter -> b
+    android.content.Context mContext -> c
+    com.tencent.tws.batterycharge.CommonUtils mCommonUtils -> d
+    android.content.res.Resources mResources -> e
+    float mScreenWidth -> f
+    float mScreenHeight -> g
+    float mStartAngle -> h
+    float mSweepAngle -> i
+    int mBatteryLevel -> j
+    android.graphics.RectF mRecfInner -> k
+    android.graphics.Paint mPaintWhite -> l
+    android.graphics.Paint mPaintGreen -> m
+    float mGreenCircleWidth -> n
+    float mOuterCircleWidth -> o
+    android.graphics.Movie mMovieGif -> p
+    long mMovieStart -> q
+    boolean headFninished -> r
+    int mDynamicWidth -> s
+    int mGifDuration -> t
+    com.tencent.tws.batterycharge.BatteryStateBase$GifHandler mHandler -> u
+    float mValue -> v
+    java.lang.Runnable mRunnable -> a
+    int relTime -> w
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void circleAnim(float) -> a
+    float access$100(com.tencent.tws.batterycharge.BatteryStateBase) -> a
+    float access$202(com.tencent.tws.batterycharge.BatteryStateBase,float) -> a
+    int access$302(com.tencent.tws.batterycharge.BatteryStateBase,int) -> a
+    android.content.Context access$400(com.tencent.tws.batterycharge.BatteryStateBase) -> b
+    com.tencent.tws.batterycharge.CommonUtils access$500(com.tencent.tws.batterycharge.BatteryStateBase) -> c
+    int access$300(com.tencent.tws.batterycharge.BatteryStateBase) -> d
+    com.tencent.tws.batterycharge.BatteryStateBase$GifHandler access$600(com.tencent.tws.batterycharge.BatteryStateBase) -> e
+com.tencent.tws.batterycharge.BatteryStateBase$1 -> com.tencent.tws.batterycharge.c:
+    com.tencent.tws.batterycharge.BatteryStateBase this$0 -> a
+    void run() -> run
+com.tencent.tws.batterycharge.BatteryStateBase$2 -> com.tencent.tws.batterycharge.d:
+    com.tencent.tws.batterycharge.BatteryStateBase this$0 -> a
+    void onAnimationUpdate(android.animation.ValueAnimator) -> onAnimationUpdate
+com.tencent.tws.batterycharge.BatteryStateBase$3 -> com.tencent.tws.batterycharge.e:
+    com.tencent.tws.batterycharge.BatteryStateBase this$0 -> a
+    void run() -> run
+com.tencent.tws.batterycharge.BatteryStateBase$GifHandler -> com.tencent.tws.batterycharge.f:
+    com.tencent.tws.batterycharge.BatteryStateBase this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.tencent.tws.batterycharge.BatteryStateView -> com.tencent.tws.batterycharge.g:
+    android.content.Context mContext -> c
+    com.tencent.tws.batterycharge.CommonUtils mCommonUtils -> d
+    android.widget.TextView tvPercent -> e
+    android.widget.TextView tvClock -> f
+    android.widget.ImageView ivIcon -> g
+    android.widget.ImageView ivIconLine -> h
+    int mLevel -> i
+    int mLevelMills -> j
+    int mLevelStart -> k
+    android.content.BroadcastReceiver mBReceiver -> l
+    android.os.Handler mHandler -> a
+    java.lang.Runnable mAlphaRunnable -> m
+    java.lang.Runnable mScaleRunable -> n
+    java.lang.Runnable mPercentRunnable -> b
+    java.lang.Runnable mClockRunable -> o
+    void registBroadcastReceiver() -> a
+    void unregistBroadcastReceiver() -> b
+    void refreshTime() -> c
+    int access$002(com.tencent.tws.batterycharge.BatteryStateView,int) -> a
+    int access$000(com.tencent.tws.batterycharge.BatteryStateView) -> a
+    android.widget.TextView access$100(com.tencent.tws.batterycharge.BatteryStateView) -> b
+    void access$200(com.tencent.tws.batterycharge.BatteryStateView) -> c
+    android.widget.ImageView access$300(com.tencent.tws.batterycharge.BatteryStateView) -> d
+    android.widget.ImageView access$400(com.tencent.tws.batterycharge.BatteryStateView) -> e
+    int access$500(com.tencent.tws.batterycharge.BatteryStateView) -> f
+    int access$512(com.tencent.tws.batterycharge.BatteryStateView,int) -> b
+    int access$600(com.tencent.tws.batterycharge.BatteryStateView) -> g
+    int access$502(com.tencent.tws.batterycharge.BatteryStateView,int) -> c
+    android.widget.TextView access$700(com.tencent.tws.batterycharge.BatteryStateView) -> h
+com.tencent.tws.batterycharge.BatteryStateView$1 -> com.tencent.tws.batterycharge.h:
+    com.tencent.tws.batterycharge.BatteryStateView this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.tencent.tws.batterycharge.BatteryStateView$2 -> com.tencent.tws.batterycharge.i:
+    com.tencent.tws.batterycharge.BatteryStateView this$0 -> a
+    void run() -> run
+com.tencent.tws.batterycharge.BatteryStateView$3 -> com.tencent.tws.batterycharge.j:
+    com.tencent.tws.batterycharge.BatteryStateView this$0 -> a
+    void run() -> run
+com.tencent.tws.batterycharge.BatteryStateView$4 -> com.tencent.tws.batterycharge.k:
+    com.tencent.tws.batterycharge.BatteryStateView this$0 -> a
+    void run() -> run
+com.tencent.tws.batterycharge.BatteryStateView$5 -> com.tencent.tws.batterycharge.l:
+    com.tencent.tws.batterycharge.BatteryStateView this$0 -> a
+    void run() -> run
+com.tencent.tws.batterycharge.ChargeActivity -> com.tencent.tws.batterycharge.ChargeActivity:
+    android.os.PowerManager mPowerManager -> a
+    android.os.PowerManager$WakeLock mWakeLock -> b
+    android.view.GestureDetector mGestureDetector -> c
+    com.tencent.tws.batterycharge.BatteryStateView mBatteryStateView -> d
+    android.content.BroadcastReceiver mBroadcastReceiver -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean dispatchTouchEvent(android.view.MotionEvent) -> dispatchTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+com.tencent.tws.batterycharge.ChargeActivity$1 -> com.tencent.tws.batterycharge.m:
+    com.tencent.tws.batterycharge.ChargeActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.tencent.tws.batterycharge.ChargeActivity$MyGestureListener -> com.tencent.tws.batterycharge.n:
+    com.tencent.tws.batterycharge.ChargeActivity this$0 -> a
+    boolean onSingleTapUp(android.view.MotionEvent) -> onSingleTapUp
+com.tencent.tws.batterycharge.CommonUtils -> com.tencent.tws.batterycharge.o:
+    com.tencent.tws.batterycharge.CommonUtils mCommonUtils -> a
+    java.util.Calendar mCalendar -> b
+    android.util.DisplayMetrics dm -> c
+    android.content.Context mContext -> d
+    int HOURS -> e
+    int MINUTES -> f
+    com.tencent.tws.batterycharge.CommonUtils getInstance(android.content.Context) -> a
+    int getHoursNow() -> a
+    int getMinutesNow() -> b
+    int getScreenWidth() -> c
+    int getScreenHeight() -> d
+    int CheckBatteryLevel(android.content.Context) -> b
